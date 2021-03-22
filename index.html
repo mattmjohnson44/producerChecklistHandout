@@ -40,9 +40,9 @@
     topProduct5.innerHTML = data.topProduct5;
     topProduct6.innerHTML = data.topProduct6;
     topProduct7.innerHTML = data.topProduct7;
-    btopProduct8.innerHTML = data.btopProduct8;
-    btopProduct9.innerHTML = data.btopProduct9;
-    btopProduct10.innerHTML = data.btopProduct10;
+    topProduct8.innerHTML = data.topProduct8;
+    topProduct9.innerHTML = data.topProduct9;
+    topProduct10.innerHTML = data.topProduct10;
     topProduct1Sales.innerHTML = data.topProduct1Sales;
     topProduct2Sales.innerHTML = data.topProduct2Sales;
     topProduct3Sales.innerHTML = data.topProduct3Sales;
@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', init)
 								<td valign="top" class="bodyContent" mc:edit="body_content">
 									<p>Hi <span id="producerName"> </span> <br /><br /></p>
                   <h3><strong>LAST WEEK'S SALES 💰</strong></h3>
-                  <p>You sold <strong>$[lastWeekSales,fallback=]</strong> worth of items last week, which is <strong>$[aboveBelowAverage,fallback=] [moreLess,fallback=]</strong> than your 3 month average<br /><br /></p>
+                  <p>You sold <strong><span id="lastWeekSales"><span></strong> worth of items last week, which is <strong><span id="aboveBelowAverage"></span> <span id="moreLess"></span></strong> than your 3 month average<br /><br /></p>
                   <h3><strong>ITEMS YOUR CUSTOMERS LOVE ❤️</strong></h3>
                   <p>These items have been your most popular over the last month. Please check your stock levels to make sure they'll be available<br /><br /></p>
 								</td>
@@ -131,62 +131,62 @@ window.addEventListener('DOMContentLoaded', init)
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>1.</strong> </td>
-                      <td> [topProduct1,fallback=] </td>
-                      <td> [topProduct1Sales,fallback=] </td>
+                      <td> <span id="topProduct1"></span></td>
+                      <td> <span id="topProduct1Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>2.</strong> </td>
-                      <td> [topProduct2,fallback=] </td>
-                      <td> [topProduct2Sales,fallback=] </td>
+                      <td> <span id="topProduct2"></span></td>
+                      <td> <span id="topProduct2Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>3.</strong> </td>
-                      <td> [topProduct3,fallback=] </td>
-                      <td> [topProduct3Sales,fallback=] </td>
+                      <td> <span id="topProduct3"></span> </td>
+                      <td> <span id="topProduct3Sales"></span> </td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>4.</strong> </td>
-                      <td> [topProduct4,fallback=] </td>
-                      <td> [topProduct4Sales,fallback=] </td>
+                      <td> <span id="topProduct4"></span> </td>
+                      <td> <span id="topProduct4Sales"></span> </td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>5.</strong> </td>
-                      <td> [topProduct5,fallback=] </td>
-                      <td> [topProduct5Sales,fallback=] </td>
+                      <td> <span id="topProduct5"></span> </td>
+                      <td> <span id="topProduct5Sales"></span> </td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>6.</strong> </td>
-                      <td> [topProduct6,fallback=] </td>
-                      <td> [topProduct6Sales,fallback=] </td>
+                      <td> <span id="topProduct6"></span> </td>
+                      <td> <span id="topProduct6Sales"></span> </td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>7.</strong> </td>
-                      <td> [topProduct7,fallback=------] </td>
-                      <td> [topProduct7Sales,fallback=------] </td>
+                      <td> <span id="topProduct7"></span></td>
+                      <td> <span id="topProduct7Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>8.</strong> </td>
-                      <td> [topProduct8,fallback=------] </td>
-                      <td> [topProduct8Sales,fallback=------] </td>
+                      <td> <span id="topProduct8"></span></td>
+                      <td> <span id="topProduct8Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>9.</strong> </td>
-                      <td> [topProduct9,fallback=NA] </td>
-                      <td> [topProduct9Sales,fallback=NA] </td>
+                      <td> <span id="topProduct9"></span></td>
+                      <td> <span id="topProduct9Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>10.</strong> </td>
-                      <td> [topProduct10,fallback=NA] </td>
-                      <td> [topProduct10Sales,fallback=NA] </td>
+                      <td> <span id="topProduct10"></span></td>
+                      <td> <span id="topProduct10Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                   </table>
@@ -217,62 +217,62 @@ window.addEventListener('DOMContentLoaded', init)
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>1.</strong> </td>
-                      <td> [issueItem1,fallback=]</td>
-                      <td> [issueItem1Sales,fallback=] </td>
+                      <td> <span id="issueItem1"></span></td>
+                      <td> <span id="issueItem1Sales"></span> </td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>2.</strong> </td>
-                      <td> [issueItem2,fallback=] </td>
-                      <td> [issueItem2Sales,fallback=] </td>
+                      <td> <span id="issueItem2"></span></td>
+                      <td> <span id="issueItem2Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>3.</strong> </td>
-                      <td> [issueItem3,fallback=] </td>
-                      <td> [issueItem3Sales,fallback=] </td>
+                      <td> <span id="issueItem3"></span></td>
+                      <td> <span id="issueItem3Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>4.</strong> </td>
-                      <td> [issueItem4,fallback=] </td>
-                      <td> [issueItem4Sales,fallback=] </td>
+                      <td> <span id="issueItem4"></span></td>
+                      <td> <span id="issueItem4Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>5.</strong> </td>
-                      <td> [issueItem5,fallback=] </td>
-                      <td> [issueItem5Sales,fallback=] </td>
+                      <td> <span id="issueItem5"></span></td>
+                      <td> <span id="issueItem5Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>6.</strong> </td>
-                      <td> [issueItem6,fallback=] </td>
-                      <td> [issueItem6Sales,fallback=] </td>
+                      <td> <span id="issueItem6"></span> </td>
+                      <td> <span id="issueItem6Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>7.</strong> </td>
-                      <td> [issueItem7,fallback=] </td>
-                      <td> [issueItem7Sales,fallback=] </td>
+                      <td> <span id="issueItem7"></span> </td>
+                      <td> <span id="issueItem7Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>8.</strong> </td>
-                      <td> [issueItem8,fallback=] </td>
-                      <td> [issueItem8Sales,fallback=] </td>
+                      <td> <span id="issueItem8"></span> </td>
+                      <td> <span id="issueItem8Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>9.</strong> </td>
-                      <td> [issueItem9,fallback=] </td>
-                      <td> [issueItem9Sales,fallback=] </td>
+                      <td> <span id="issueItem9"></span> </td>
+                      <td> <span id="issueItem9Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                     <tr style="font-family: 'Source Sans Pro', sans-serif;">
                       <td> <strong>10.</strong> </td>
-                      <td> [issueItem10,fallback=] </td>
-                      <td> [issueItem10Sales,fallback=] </td>
+                      <td> <span id="issueItem10"></span> </td>
+                      <td> <span id="issueItem10Sales"></span></td>
                       <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
                     </tr>
                   </table>
@@ -284,7 +284,7 @@ window.addEventListener('DOMContentLoaded', init)
               <tr>
                 <td valign="top" class="bodyContent" mc:edit="body_content">
                   <h3><strong>ITEMS CUSTOMERS WANT 🤚</strong></h3>
-                  <p>If you have any new items, please add them to your stock. Items customers have requested include <strong>[productRequest1,fallback=] [productRequest2,fallback=] [productRequest3,fallback=] [productRequest4,fallback=]</strong>.<br /><br /></p>
+                  <p>If you have any new items, please add them to your stock. Items customers have requested include <strong><span id="productRequest1"></span> <span id="productRequest2"></span> <span id="productRequest3"></span> <span id="productRequest4"></span></strong>.<br /><br /></p>
               
                 </td>
               </tr>
