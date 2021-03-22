@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Announcement</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'> </script>
+
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1UlZ7Z0ONDunof3iD7INx59a99vG_ETZ_N_40eLOB8uY/edit?usp=sharing';
+
+  function init() {
+    Tabletop.init( {
+      key: publicSpreadsheetUrl,
+      callback: showInfo,
+      simpleSheet: true 
+    } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert('Successfully processed!')
+    console.log(data);
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+
+  function showInfo(data, tabletop) {
+  data.forEach(function(data) {
+    producerName.innerHTML = data.producerName;
+    lastWeekSales.innerHTML = data.lastWeekSales;
+    aboveBelowAverage.innerHTML = data.aboveBelowAverage;
+    moreLess.innerHTML = data.moreLess;
+    topProduct1.innerHTML = data.topProduct1;
+    topProduct2.innerHTML = data.topProduct2;
+    topProduct3.innerHTML = data.topProduct3;
+    topProduct4.innerHTML = data.topProduct4;
+    topProduct5.innerHTML = data.topProduct5;
+    topProduct6.innerHTML = data.topProduct6;
+    topProduct7.innerHTML = data.topProduct7;
+    btopProduct8.innerHTML = data.btopProduct8;
+    btopProduct9.innerHTML = data.btopProduct9;
+    btopProduct10.innerHTML = data.btopProduct10;
+    topProduct1Sales.innerHTML = data.topProduct1Sales;
+    topProduct2Sales.innerHTML = data.topProduct2Sales;
+    topProduct3Sales.innerHTML = data.topProduct3Sales;
+    topProduct4Sales.innerHTML = data.topProduct4Sales;
+    topProduct5Sales.innerHTML = data.topProduct5Sales;
+    topProduct6Sales.innerHTML = data.topProduct6Sales;
+    topProduct7Sales.innerHTML = data.topProduct7Sales;
+    topProduct8Sales.innerHTML = data.topProduct8Sales;
+    topProduct9Sales.innerHTML = data.topProduct9Sales;
+    topProduct10Sales.innerHTML = data.topProduct10Sales;
+    issueItem1.innerHTML = data.issueItem1;
+    issueItem2.innerHTML = data.issueItem2;
+    issueItem3.innerHTML = data.issueItem3;
+    issueItem4.innerHTML = data.issueItem4;
+    issueItem5.innerHTML = data.issueItem5;
+    issueItem6.innerHTML = data.issueItem6;
+    issueItem7.innerHTML = data.issueItem7;
+    issueItem8.innerHTML = data.issueItem8;
+    issueItem9.innerHTML = data.issueItem9;
+    issueItem10.innerHTML = data.issueItem10;
+    issueItem1Sales.innerHTML = data.issueItem1Sales;
+    issueItem2Sales.innerHTML = data.issueItem2Sales;
+    issueItem3Sales.innerHTML = data.issueItem3Sales;
+    issueItem4Sales.innerHTML = data.issueItem4Sales;
+    issueItem5Sales.innerHTML = data.issueItem5Sales;
+    issueItem6Sales.innerHTML = data.issueItem6Sales;
+    issueItem7Sales.innerHTML = data.issueItem7Sales;
+    issueItem8Sales.innerHTML = data.issueItem8Sales;
+    issueItem9Sales.innerHTML = data.issueItem9Sales;
+    issueItem10Sales.innerHTML = data.issueItem10Sales;
+    productRequest1.innerHTML = data.productRequest1;
+    productRequest2.innerHTML = data.productRequest2;
+    productRequest3.innerHTML = data.productRequest3;
+    productRequest4.innerHTML = data.productRequest4;
+ });
+}
+window.addEventListener('DOMContentLoaded', init)
+</script>
+
+</head>
+
+<body yahoo bgcolor="#ffffff">
+<table width="100%" bgcolor="#ffffff" border="0" cellpadding="10" cellspacing="0">
+<tr>
+  <td>
+    <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+    <![endif]-->
+    <table bgcolor="#ffffff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign="top" mc:edit="headerBrand" id="templateContainerHeader">
+
+					<p style="text-align:center;margin:0;padding:0;">
+						<img src="https://www.yourgrocer.com.au/yg_logo.png" style="display:inline-block;" width="25%" />
+					</p>
+
+				</td>
+			</tr>
+      <tr>
+				<td align="center" valign="top">
+						<!-- BEGIN BODY // -->
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateContainerMiddle">
+							<tr>
+								<td valign="top" class="bodyContent" mc:edit="body_content">
+									<p>Hi <span id="producerName"> </span> <br /><br /></p>
+                  <h3><strong>LAST WEEK'S SALES 💰</strong></h3>
+                  <p>You sold <strong>$[lastWeekSales,fallback=]</strong> worth of items last week, which is <strong>$[aboveBelowAverage,fallback=] [moreLess,fallback=]</strong> than your 3 month average<br /><br /></p>
+                  <h3><strong>ITEMS YOUR CUSTOMERS LOVE ❤️</strong></h3>
+                  <p>These items have been your most popular over the last month. Please check your stock levels to make sure they'll be available<br /><br /></p>
+								</td>
+              </tr>
+						
+
+<td>
+<table width="600" style="border:0px solid #333">
+              <tr>
+                <td align="center">
+                  <table align="center" width="550" border="0" cellspacing="0" cellpadding="0" style="border:0px solid #ccc;">
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> </td>
+                      <td> <STRONG>Product Name</STRONG></td>
+                      <td> <STRONG>Listed price</STRONG></td>
+                      <td> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>1.</strong> </td>
+                      <td> [topProduct1,fallback=] </td>
+                      <td> [topProduct1Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>2.</strong> </td>
+                      <td> [topProduct2,fallback=] </td>
+                      <td> [topProduct2Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>3.</strong> </td>
+                      <td> [topProduct3,fallback=] </td>
+                      <td> [topProduct3Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>4.</strong> </td>
+                      <td> [topProduct4,fallback=] </td>
+                      <td> [topProduct4Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>5.</strong> </td>
+                      <td> [topProduct5,fallback=] </td>
+                      <td> [topProduct5Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>6.</strong> </td>
+                      <td> [topProduct6,fallback=] </td>
+                      <td> [topProduct6Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>7.</strong> </td>
+                      <td> [topProduct7,fallback=------] </td>
+                      <td> [topProduct7Sales,fallback=------] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>8.</strong> </td>
+                      <td> [topProduct8,fallback=------] </td>
+                      <td> [topProduct8Sales,fallback=------] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>9.</strong> </td>
+                      <td> [topProduct9,fallback=NA] </td>
+                      <td> [topProduct9Sales,fallback=NA] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>10.</strong> </td>
+                      <td> [topProduct10,fallback=NA] </td>
+                      <td> [topProduct10Sales,fallback=NA] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <hr width="400" id='divider'>
+          </td>
+
+        <tr>
+                <td valign="top" class="bodyContent" mc:edit="body_content">
+                  <h3><strong>ITEMS WITH ISSUES ⚠️</strong></h3>
+                  <p>These items had issues last week, either being unavailable or having poor customer quality feedback. Please remove them if they are not currently available to order.<br /><br /></p>
+              
+                </td>
+              </tr>
+
+        <td>
+          <table width="600" style="border:0px solid #333">
+              <tr>
+                <td align="center">
+                  <table align="center" width="550" border="0" cellspacing="0" cellpadding="0" style="border:0px solid #ccc;">
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> </td>
+                      <td> <STRONG>Product Name</STRONG></td>
+                      <td> <STRONG>Listed price</STRONG></td>
+                      <td> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>1.</strong> </td>
+                      <td> [issueItem1,fallback=]</td>
+                      <td> [issueItem1Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>2.</strong> </td>
+                      <td> [issueItem2,fallback=] </td>
+                      <td> [issueItem2Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>3.</strong> </td>
+                      <td> [issueItem3,fallback=] </td>
+                      <td> [issueItem3Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>4.</strong> </td>
+                      <td> [issueItem4,fallback=] </td>
+                      <td> [issueItem4Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>5.</strong> </td>
+                      <td> [issueItem5,fallback=] </td>
+                      <td> [issueItem5Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>6.</strong> </td>
+                      <td> [issueItem6,fallback=] </td>
+                      <td> [issueItem6Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>7.</strong> </td>
+                      <td> [issueItem7,fallback=] </td>
+                      <td> [issueItem7Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>8.</strong> </td>
+                      <td> [issueItem8,fallback=] </td>
+                      <td> [issueItem8Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>9.</strong> </td>
+                      <td> [issueItem9,fallback=] </td>
+                      <td> [issueItem9Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                    <tr style="font-family: 'Source Sans Pro', sans-serif;">
+                      <td> <strong>10.</strong> </td>
+                      <td> [issueItem10,fallback=] </td>
+                      <td> [issueItem10Sales,fallback=] </td>
+                      <td> <a class="blue-btn" href="https://retailer.yourgrocer.com.au/#/products"><strong>CHANGE</strong></a> </td>
+                    </tr>
+                  </table>
+                  <hr width="400" id='divider'>
+                </td>
+              </tr>
+            </table>
+
+              <tr>
+                <td valign="top" class="bodyContent" mc:edit="body_content">
+                  <h3><strong>ITEMS CUSTOMERS WANT 🤚</strong></h3>
+                  <p>If you have any new items, please add them to your stock. Items customers have requested include <strong>[productRequest1,fallback=] [productRequest2,fallback=] [productRequest3,fallback=] [productRequest4,fallback=]</strong>.<br /><br /></p>
+              
+                </td>
+              </tr>
+
+              <tr>
+        <td align="center" valign="top">
+            <!-- BEGIN BODY // -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td valign="top" class="bodyContentCenter" mc:edit="body_content_centered">
+                  <a class="blue-btn" href="https://onboarding.yourgrocer.com.au/"><strong>ADD A NEW ITEM</strong></a>
+                </td>
+              </tr>
+
+              <tr>
+
+                <td valign="top" class="bodyContent" mc:edit="body_content">
+
+                  <p>Please email or call 1300 851 343 if you have any feedback.<br /><br />
+                    Have a great week,<br /><br />
+                    YourGrocer
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+
+
+            <!-- // END BODY -->
+          </td>
+      </tr>
+
+          </td>
+						</table>
+          
+
+
+            <!-- // TOP ITEMS TABLE -->
+
+
+						<!-- // END BODY -->
+					</td>
+			</tr>
+      
+			<tr>
+				<td align="center" valign="top">
+						<!-- BEGIN BODY // -->
+						
+							</table>
+							<!-- // END BODY -->
+					</td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" id="bodyCellFooter" class="unSubContent">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" id="templateContainerFooter">
+						<tr>
+							<td valign="top" width="100%" mc:edit="footer_unsubscribe">
+								<h6 style="text-align:center;margin-top: 9px;">YourGrocer</h6>
+								<h6 style="text-align:center;">112&#8203; Roseneath&#8203; Street&#8203;</h6>
+								<h6 style="text-align:center;">Clifton Hill,&#8203; VIC&#8203; 3068&#8203;</h6>
+								<h6 style="text-align:center;margin-top: 7px;"><unsubscribe>unsubscribe</unsubscribe></h6>
+							</td>
+						</tr>
+					</table>
+          <hr width="400" id='divider'>
+				</td>
+			</tr>
+
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+    </table>
+    <![endif]-->
+    </td>
+  </tr>
+</table>
+<style type="text/css">
+  /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+  #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+  .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+  body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+  table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+  td ul li {
+    font-size: 16px;
+  }
+  /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+  body{margin:0; padding:0;}
+  img{
+    max-width:100%;
+    border:0;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+  }
+  table{border-collapse:collapse !important;}
+  .content {width: 100%; max-width: 600px;}
+  .content img { height: auto; min-height: 1px; }
+
+  #bodyTable{margin:0; padding:0; width:100% !important;}
+  #bodyCell{margin:0; padding:0;}
+  #bodyCellFooter{margin:0; padding:0; width:100% !important;padding-top:39px;padding-bottom:15px;}
+  body {margin: 0; padding: 0; min-width: 100%!important;}
+
+  #templateContainerHeader{
+    font-size: 14px;
+    padding-top:2.429em;
+    padding-bottom:0.929em;
+  }
+  #templateContainerFootBrd{
+    border-bottom:1px solid #e2e2e2;
+    border-left:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+    border-radius: 0 0 4px 4px;
+    background-clip: padding-box;
+    border-spacing: 0;
+    height: 10px;
+    width:100% !important;
+  }
+  #templateContainer{
+    border-top:1px solid #e2e2e2;
+    border-left:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+    border-radius: 4px 4px 0 0 ;
+    background-clip: padding-box;
+    border-spacing: 0;
+  }
+  #templateContainerMiddle {
+    border-left:8px solid #6FCF97;
+    border-right:8px solid #6FCF97;
+    border-top:8px solid #6FCF97;
+    border-bottom:8px solid #6FCF97;
+  }
+  #templateContainerMiddleBtm {
+    border-left:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+    border-radius: 0 0 4px 4px;
+    background-clip: padding-box;
+    border-spacing: 0;
+  }
+  #divider {
+    color: #E0E0E0;
+    margin-top: 40px;
+  }
+
+  /**
+  * @tab Page
+  * @section heading 1
+  * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+  * @style heading 1
+  */
+  h1{
+     color:#2e2e2e;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:26px;
+     line-height:1.385em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+  /**
+  * @tab Page
+  * @section heading 2
+  * @tip Set the styling for all second-level headings in your emails.
+  * @style heading 2
+  */
+  h2{
+     color:#2e2e2e;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:22px;
+     line-height:1.455em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+  /**
+  * @tab Page
+  * @section heading 3
+  * @tip Set the styling for all third-level headings in your emails.
+  * @style heading 3
+  */
+  h3{
+     color:#333333;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:18px;
+     line-height:1.444em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+  /**
+  * @tab Page
+  * @section heading 4
+  * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+  * @style heading 4
+  */
+  h4{
+     color:#545454;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:14px;
+     line-height:1.571em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+
+  h5{
+     color:#545454;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:13px;
+     line-height:1.538em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+
+  h6{
+     color:#545454;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:12px;
+     line-height:2.000em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+     text-align:left;
+  }
+
+  p {
+     color:#333333;
+    display:block;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size:16px;
+     line-height:1.500em;
+     font-style:normal;
+     font-weight:normal;
+     letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:15px;
+    margin-left:0;
+    text-align:left;
+  }
+
+  .unSubContent a:visited { color: #a1a1a1; text-decoration:underline; font-weight:normal;}
+  .unSubContent a:focus   { color: #a1a1a1; text-decoration:underline; font-weight:normal;}
+  .unSubContent a:hover   { color: #a1a1a1; text-decoration:underline; font-weight:normal;}
+  .unSubContent a:link   { color: #a1a1a1 ; text-decoration:underline; font-weight:normal;}
+  .unSubContent a .yshortcuts   { color: #a1a1a1 ; text-decoration:underline; font-weight:normal;}
+
+  .unSubContent h6 {
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .bodyContent{
+    color:#505050;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height:150%;
+    padding-top:3.143em;
+    padding-right:3.5em;
+    padding-left:3.5em;
+    padding-bottom:0.714em;
+     text-align:left;
+  }
+  .bodyContentCenter {
+    color:#505050;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    line-height:150%;
+    padding-top:0em;
+    padding-right:3.5em;
+    padding-left:3.5em;
+    padding-bottom:3.0em;
+    text-align:center;
+  }
+  .bodyContentCenter p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .bodyContentCenter a.blue-btn {
+    margin-top: 0;
+  }
+  .bodyContentImage {
+    color:#505050;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    line-height:150%;
+    padding-top:0;
+    padding-right:3.571em;
+    padding-left:3.571em;
+    padding-bottom:2em;
+    text-align:left;
+  }
+
+  .bodyContentImage h4 {
+    color: #4E4E4E;
+    font-size: 13px;
+    line-height: 1.154em;
+    font-weight:normal;
+    margin-bottom: 0;
+  }
+  .bodyContentImage h5 {
+    color: #828282;
+    font-size: 12px;
+    line-height: 1.667em;
+    margin-bottom: 0;
+  }
+
+  /**
+  * @tab Body
+  * @section body link
+  * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+  */
+  a:visited { color: #3386e4; text-decoration:none;}
+  a:focus   { color: #3386e4; text-decoration:none;}
+  a:hover   { color: #3386e4; text-decoration:none;}
+  a:link   { color: #3386e4 ; text-decoration:none;}
+  a .yshortcuts   { color: #3386e4 ; text-decoration:none;}
+
+  .bodyContent img{
+    height:auto;
+    max-width:498px;
+  }
+
+  .footerContent{
+    color:#808080;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:10px;
+    line-height:150%;
+    padding-top:2.000em;
+    padding-right:2.000em;
+    padding-bottom:2.000em;
+    padding-left:2.000em;
+    text-align:left;
+  }
+
+  /**
+  * @tab Footer
+  * @section footer link
+  * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+  */
+  .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+     color:#606060;
+     font-weight:normal;
+     text-decoration:underline;
+  }
+
+  /**
+  * @tab Footer
+  * @section footer link
+  * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+  */
+  #templateContainerImageFull { border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; }
+  #templateContainerImageCurve {
+    border-top:1px solid #e2e2e2;
+    border-left:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+    border-radius: 3px 3px 0px 0px;
+    background-clip: padding-box;
+    border-collapse: separate !important;
+    border-spacing: 0;
+  }
+  #templateContainerImageCurve img {
+    border-radius: 3px 3px 0px 0px;
+    background-clip: padding-box;
+  }
+  /*boom*/
+  .bodyContentImageFull p { font-size:0 !important; margin-bottom: 0 !important; }
+  .brdBottomPadd { border-bottom: 1px solid #f0f0f0; }
+  .brdBottomPadd .bodyContent { padding-bottom: 2.286em; }
+  a.blue-btn {
+    background: #6FCF97;
+    display: inline-block;
+    color: #FFFFFF;
+    border-top:8px solid #6FCF97;
+    border-bottom:8px solid #6FCF97;
+    border-bottom:6px solid #6FCF97;
+    border-left:15px solid #6FCF97;
+    border-right:15px solid #6FCF97;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-radius: 3px 3px 3px 3px;
+    background-clip: padding-box;
+  }
+
+
+  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+    body[yahoo] .hide {display: none!important;}
+    body[yahoo] .buttonwrapper {background-color: transparent!important;}
+    body[yahoo] .button {padding: 0px!important;}
+    body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
+    body[yahoo] .unsubscribe { font-size: 14px; display: block; margin-top: 0.714em; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important;}
+  }
+  /*@media only screen and (min-device-width: 601px) {
+    .content {width: 600px !important;}
+  }*/
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size:34px !important;
+    }
+    h2{
+      font-size:30px !important;
+    }
+    h3{
+      font-size:24px !important;
+    }
+    h4{
+      font-size:18px !important;
+    }
+    h5{
+      font-size:16px !important;
+    }
+    h6{
+      font-size:14px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+    .brdBottomPadd .bodyContent { padding-bottom: 2.286em !important; }
+    .bodyContent {
+      padding: 6% 5% 1% 6% !important;
+    }
+    .bodyContent img {
+      max-width: 100% !important;
+    }
+    .bodyContentImage {
+      padding: 3% 6% 6% 6% !important;
+    }
+    .bodyContentImage img {
+      max-width: 100% !important;
+    }
+    .bodyContentImage h4 {
+      font-size: 16px !important;
+    }
+    .bodyContentImage h5 {
+      font-size: 15px !important;
+      margin-top:0;
+    }
+    td[class="bodyContentCenter"] {
+      padding: 6% 6% 6% 6% !important;
+    }
+  }
+  .ii a[href] {color: inherit !important;}
+  span > a, span > a[href] {color: inherit !important;}
+  a > span, .ii a[href] > span {text-decoration: inherit !important;}
+</style>
+</body>
+</html>
